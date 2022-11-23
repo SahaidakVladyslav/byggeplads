@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
 </head>
@@ -467,23 +468,117 @@
                     <svg>
                         <use href="./img/svg/symbol-defs.byggeplads.svg#icon-notebook" width="22.5" height="25"></use>
                     </svg>
-                    <h4 class="">
+                    <h4 class="form--subtitle--left">
                         Testimonial
                     </h4>
                 </div>
                 <h2 class="form--title--left">
                     Customers Says
                 </h2>
-                <div class="form__container--customer">
-                    <!-- <img width="70" height="70"
-                    src="./img/avatar.jpg" alt="Avatar Nency">
-                    <h3 class="customer--title">
-                        Nancy Luther
-                    </h3>
-                    <p class="customer--label">
-                        NewYork
-                    </p> -->
-                </div>
+                    <div class="form__container--customer swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                        <img width="70" height="70"
+                        src="./img/avatar.jpg" 
+                        alt="Avatar Nency">
+                        <h3 class="customer--title">
+                            Nancy Luther
+                        </h3>
+                        <p class="customer--label">
+                            NewYork
+                        </p>
+                        <svg class="customer__slider--svg">
+                            <use href="./img/svg/symbol-defs.byggeplads.svg#icon-quote" width="23" height="17"></use>
+                        </svg>
+                        <p class="customer--text ">
+                            We have had several good experiences with 
+                            <span class="customer--text--span">
+                                Blue Collar
+                            </span>
+                            team. Most recently, they replaced our 20-year-old HVAC system with a new, 
+                            <span class="customer--text--span">
+                                modern, and more efficient
+                            </span>
+                            system & it worked fine. 
+                        </p>
+                                    </div>
+                            <div class="swiper-slide">
+                            <img width="70" height="70"
+                            src="./img/avatar.jpg" 
+                            alt="Avatar Nency">
+                            <h3 class="customer--title">
+                                Nancy Luther
+                            </h3>
+                            <p class="customer--label">
+                                NewYork
+                            </p>
+                            <svg class="customer__slider--svg">
+                                <use href="./img/svg/symbol-defs.byggeplads.svg#icon-quote" width="23" height="17"></use>
+                            </svg>
+                            <p class="customer--text ">
+                                We have had several good experiences with 
+                                <span class="customer--text--span">
+                                    Blue Collar
+                                </span>
+                                team. Most recently, they replaced our 20-year-old HVAC system with a new, 
+                                <span class="customer--text--span">
+                                    modern, and more efficient
+                                </span>
+                                system & it worked fine. 
+                            </p>
+                                    </div>
+                            <div class="swiper-slide">
+                            <img width="70" height="70"
+                            src="./img/avatar.jpg" 
+                            alt="Avatar Nency">
+                            <h3 class="customer--title">
+                                Nancy Luther
+                            </h3>
+                            <p class="customer--label">
+                                NewYork
+                            </p>
+                            <svg class="customer__slider--svg">
+                                <use href="./img/svg/symbol-defs.byggeplads.svg#icon-quote" width="23" height="17"></use>
+                            </svg>
+                            <p class="customer--text ">
+                                We have had several good experiences with 
+                                <span class="customer--text--span">
+                                    Blue Collar
+                                </span>
+                                team. Most recently, they replaced our 20-year-old HVAC system with a new, 
+                                <span class="customer--text--span">
+                                    modern, and more efficient
+                                </span>
+                                system & it worked fine. 
+                            </p>
+                                    </div>
+                            </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="form__left--clarification">
+                        <div class="clarification__box--sybtitle box--sybtitle">
+                            <svg>
+                                <use href="./img/svg/symbol-defs.byggeplads.svg#icon-notebook" width="22.5" height="25"></use>
+                            </svg>
+                            <h4 class="experience--subtitle">
+                                The Gallery
+                            </h4>
+                        </div>
+                        <h3 class="clarification--title">
+                            99.9% Customer Satisfaction Based
+                        </h3>
+                        <p class="clarification--label">
+                            If you have any questions or need help contact with our team, or call
+                        </p>
+                        <a class="clarification--call" href="tel:+0031234567890">
+                            <svg class="clarification--svg">
+                                <use href="./img/svg/symbol-defs.byggeplads.svg#icon-telephone" width="24" height="24"></use>
+                            </svg>
+                            (003) 123 456 7890
+                        </a>
+                    </div>
             </div>
             <div class="form__box--right">
                 <div class="box--sybtitle">
@@ -497,8 +592,44 @@
                 <h2 class="form--title--right">
                     Appointment Form
                 </h2>
+                <form class="form__right--appointment">
+                    <div class="appointment__input--name">
+                        <input type="text" name="name" id="name" minlength="5" maxlength="80" placeholder="Your name">
+                    </div>
+                    <div class="appointment__input--email">
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                    </div>
+                    <div class="appointment__input--tel">
+                        <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="appointment__input--date">
+                        <input type="date" name="trip-start" value="2025-11-23" min="2022-02-24" max="2030-05-20" id="date">
+                    </div>
+                    <div class="appointment__input--textarea">
+                        <textarea name="comment" id="comment" placeholder="Service Description"></textarea>
+                    </div>
+                    <button type="button" class="appointment__input--button">
+                        Submit
+                    </button>
+                </form>
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
