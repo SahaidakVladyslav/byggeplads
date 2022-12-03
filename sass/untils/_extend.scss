@@ -1,0 +1,13 @@
+%button {
+    display: block;
+    border-radius: 5px;
+    font-size: 18;
+    line-height: 1.3;
+    padding: 15;
+    color: yellow;
+    background-color: tomato;
+    cursor: pointer;
+    &:hover {
+        background-color: blanchedalmond
+    }
+}

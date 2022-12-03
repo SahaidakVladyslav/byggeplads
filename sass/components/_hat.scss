@@ -1,0 +1,39 @@
+button {
+    @extend %button;
+    background-color: $color-accent;
+    @include dovkain(black);
+}
+ .hat__section--open {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F2F2F2;;
+ }
+ .open__label--time {
+    margin-left: 120px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+ }
+.reference__list {
+    display: flex;
+    margin-right: 120px;
+}
+.reference__item:not(:last-child) {
+    margin-right: 20px;
+}
+.reference__link:hover,
+.reference__link:focus {
+    &>svg {
+        fill: blue;
+    }
+}
+.reference--svg {
+    width: 20px;
+    height: 20px;
+    fill: $colro-violet;
+}
