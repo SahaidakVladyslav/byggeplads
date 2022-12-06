@@ -51,7 +51,16 @@
         </section>
         <section class="hat__section--leading">
             <div>
-                <img src="./img/logo.jpg" alt="logo" height="48" width="44">
+                <picture>
+                    <source srcset="./img/logo.jpg" width="300"
+                     media="(min-width:1200px)">
+                    <source srcset="./img/logo.jpg" width="200"
+                    media="(min-width:768px)">
+                    <source srcset="./img/logo.jpg" width="150" 
+                    media="(min-width:320px)">
+                    <img src="./images/img.portfolio.5.jpg" alt="white box and ordinary smaller box" width="370" height="294"
+                        class="portfolio--img">
+                </picture>
                 <h1 class="leading--logo">
                     BlueCollar
                 </h1>

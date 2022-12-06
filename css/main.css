@@ -195,33 +195,25 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #F2F2F2;
 }
 
-.open__label--time {
-  margin-left: 120px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 27px;
-  letter-spacing: 0.36px;
+.hat__section--open {
+  background-color: #F2F2F2;
 }
 
 .reference__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 120px;
 }
 
-.reference__item:not(:last-child) {
-  margin-right: 20px;
+.open__label--time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
 }
 
 .reference__link:hover > svg,
@@ -235,37 +227,6 @@ button {
   fill: #1C2752;
 }
 
-.hat__section--leading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.hat__section--leading > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.leading__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.leading--item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.leading--item > div {
-  padding-top: 11px;
-}
-
 .leading--link--svg {
   width: 68px;
   height: 68px;
@@ -277,5 +238,65 @@ button {
 }
 
 .leading--link--label {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.36px;
   color: #1C2752;
+}
+
+.leading--link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  color: #7E7E7E;
+}
+
+@media screen and (min-width: 800px) {
+  .hat__section--open {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .open__label--time {
+    margin-left: 120px;
+  }
+  .reference__list {
+    margin-right: 120px;
+  }
+  .reference__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .hat__section--leading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .hat__section--leading > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .leading__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .leading--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .leading--item > div {
+    padding-top: 11px;
+  }
 }

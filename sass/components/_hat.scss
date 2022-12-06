@@ -3,15 +3,16 @@ button {
     background-color: $color-accent;
     @include dovkain(black);
 }
- .hat__section--open {
+.hat__section--open {
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+}
+ .hat__section--open {
     background-color: #F2F2F2;;
  }
+ .reference__list {
+     display: flex;
+ }
  .open__label--time {
-    margin-left: 120px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -19,13 +20,7 @@ button {
     line-height: 27px;
     letter-spacing: 0.36px;
  }
-.reference__list {
-    display: flex;
-    margin-right: 120px;
-}
-.reference__item:not(:last-child) {
-    margin-right: 20px;
-}
+
 .reference__link:hover,
 .reference__link:focus {
     &>svg {
@@ -35,28 +30,9 @@ button {
 .reference--svg {
     width: 20px;
     height: 20px;
-    fill: $colro-violet;
+    fill: $color-violet;
 }
-.hat__section--leading {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    & > div {
-        display: flex;
-    }
-}
-// .leading--logo {
-// }
-.leading__list {
-    display: flex;
-}
-.leading--item {
-    display: flex;
-    &>div {
-        padding-top: 11px;
-    }
-}
+
 .leading--link--svg {
     width: 68px;
     height: 68px;
@@ -84,5 +60,4 @@ button {
         line-height: 27px;
         letter-spacing: 0.36px;
         color: $color-grey;
-        background-color: tomato;
 }

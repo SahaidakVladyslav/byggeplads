@@ -1,0 +1,37 @@
+@media screen and (min-width:800px) {
+    .hat__section--open {
+            padding-top: 20px;
+            padding-bottom: 20px;
+    }
+    .open__label--time {
+            margin-left: 120px;
+    }
+    .reference__list {
+            margin-right: 120px;
+        }
+    
+        .reference__item:not(:last-child) {
+            margin-right: 20px;
+        }
+    .hat__section--leading {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+    
+            &>div {
+                display: flex;
+            }
+        }
+    .leading__list {
+            display: flex;
+        }
+    
+        .leading--item {
+            display: flex;
+    
+            &>div {
+                padding-top: 11px;
+            }
+        }
+}
